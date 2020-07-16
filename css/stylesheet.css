@@ -1,0 +1,13 @@
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3{
+    font-family: 'Playfair Display', serif;
+}
+p{
+    font-size: 12px;
+}

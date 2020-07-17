@@ -4,6 +4,12 @@ body{
     margin: 0;
     padding: 0;
 }
+html{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;  
+}
 
 h1, h2, h3{
     font-family: 'Playfair Display', serif;
@@ -11,3 +17,248 @@ h1, h2, h3{
 p{
     font-size: 12px;
 }
+
+
+.social{
+    border: 1px solid #84a9ac;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 5px;
+}
+
+
+
+
+
+/* Scroll bar */
+body::-webkit-scrollbar {
+    width: 0.2em;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+  background-color:  gray;
+  outline: 1px solid rgb(7, 7, 7);
+  
+  }
+  
+  .MediaDiv{
+      /* 
+          font-size: 1.5em; */
+          z-index: 20;
+          /* margin-left:-2vw; */
+      }
+  
+  
+  /* Navbar for mobile*/
+  .overlay{
+      height: 100%;
+      width: 100%;
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left:-100vw;
+      top: 0;
+      left: 0;
+      background-color: rgb(241, 234, 234);
+      color: rgb(12, 12, 12);
+      overflow: hidden; 
+      transition: 0.5s;
+    }
+  
+  .overlay-content ul{
+     list-style: none;
+   }
+  
+    /* Position the content inside the overlay */
+  .overlay-content {
+      position: relative;
+      top: 25%;
+      width: 100%; 
+      text-align: center; 
+      margin-top: 30px; 
+  }
+  
+    /* The navigation links inside the overlay */
+  .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: black;
+      display: block; 
+      transition: 0.3s; 
+      font-size: 1.5em;
+  }
+  
+    /* Position the close button (top right corner) */ 
+  .overlay .closebtn {
+      position: absolute;
+      right: 35px;
+      top: 2px;
+      font-weight: 900;
+    }
+  
+   /*media icons */
+  .icon{
+      display: inline-block;
+      font-size: 1.5em;
+      border: 1.5px solid white;
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      text-align: center;
+      padding-top: 2px;
+  }
+    /* media icons */
+    .icon.mobile{
+      float: right;
+      color: white;
+    }
+  
+   /* burger navbar */
+  .Bars{
+      margin-left: 1vw;
+  }
+  
+  .Desktop{
+      display: none;
+  
+  }
+  
+  /* navbar */
+  .navbar-expand-lg{
+      color: black;
+      font-size: 1.5em;
+  }
+  
+  /* paragraph text for all the pages and sections */
+  p{
+      font-size: 14px;
+      font-weight: 250;
+      line-height: 18px;
+      text-align: justify;
+      text-size-adjust: 2px;
+      margin: 20px;
+  }
+  
+  h4{
+      font-size: 18px;
+  }
+  
+  /*  general classes*/
+  .hideMobile{
+      display: none;
+  }
+  
+  /* icons */
+  .icon a{
+      color: black;
+  }
+  .icon{
+      color: black;
+  }
+  a{
+      color: rgb(0, 0, 0);
+  }
+  
+  a:hover{
+      color: rgb(128, 128, 128);
+  }
+  
+  
+  /* about us page */
+  .AboutUsImage{
+      width: 100%;
+  }
+
+
+  
+ /* // -Small devices (landscape phones, 576px and up) */
+ @media (min-width: 576px) and (orientation: landscape) { 
+ 
+   
+}
+
+/* -Medium devices (tablets or ipad) */
+@media (min-width: 768px) {
+
+   
+  /* navbar section*/
+  .TabletNavbar{
+   margin-top: 2vh;
+   margin-bottom: 5vh;
+ }
+  /* burger navbar */
+ .Bars{
+   margin-left: 5vw;
+ }
+
+   /* Clients page */
+.ClientsImages{
+   width: 60%;
+}
+/* about us page */
+.AboutUsImage{
+   width: 60%;
+}
+
+.ProjectImage{
+   width: 80%;
+}
+
+.FormButton{
+   width: 25vw;
+   margin-left: 20vw;
+}
+.ProjectText{
+   transform: translate(50px,200px);
+   z-index: 10;
+}
+.TypeOfProject{
+   transform: translate(50px,200px);
+   z-index: 10;
+}
+
+
+
+}
+
+/* -Large devices (ipad pro) */
+@media (min-width: 992px) { 
+   .mobile-only{
+       display: none;
+   }
+   .Desktop{
+   display: block;
+   color: black;
+   }  
+
+/* Landing page */
+
+.FormButton{
+   width: 20vw;
+   margin-left: 15vw;
+}
+
+   
+}
+@media screen and (min-width: 1200px) {
+
+   .ProjectText{
+       transform: translate(50px,-80px);
+       z-index: 10;
+       color: hotpink;
+   }
+   .TypeOfProject{
+       transform: translate(50px,-20px);
+       z-index: 10;
+       color: hotpink;
+   }
+    
+
+  }
+ 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {}

@@ -2973,22 +2973,22 @@ readers do not read off random characters that represent icons */
 .fa-phoenix-squadron:before {
   content: "\f511"; }
 
-.fab fa-instagram:before {
+.fa-phone:before {
   content: "\f095"; }
 
-.fab fa-instagram-alt:before {
+.fa-phone-alt:before {
   content: "\f879"; }
 
-.fab fa-instagram-slash:before {
+.fa-phone-slash:before {
   content: "\f3dd"; }
 
-.fab fa-instagram-square:before {
+.fa-phone-square:before {
   content: "\f098"; }
 
-.fab fa-instagram-square-alt:before {
+.fa-phone-square-alt:before {
   content: "\f87b"; }
 
-.fab fa-instagram-volume:before {
+.fa-phone-volume:before {
   content: "\f2a0"; }
 
 .fa-photo-video:before {

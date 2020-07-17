@@ -1,4 +1,3 @@
-
 $(function(){
     var words = [
             'Zulu-thuthuka',

@@ -12,7 +12,8 @@
          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="css/stylesheet.css">
         <!-- font family -->
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,669;0,700;0,800;0,900;1,400;1,500;1,600;1,669;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">   
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,669;0,700;0,800;0,900;1,400;1,500;1,600;1,669;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">   
         <!-- font awsome -->
         <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
         <!-- jQuery -->
@@ -21,10 +22,463 @@
 </head>
 <body>
 
-        <h1 class="changes">look</h1>
-        <p>hello</p>
-        <img src="assets/images/pics/man-s-hand-in-shallow-focus-and-grayscale-photography-167964.jpg" alt="">
+<!-- navigation with the changing of words candel  ------------------------------------------------------------------------>
+  <!-- <div class="container navigation">
+          <ul class="nav justify-content-between">
+                  <li class="nav-item">
+                  <a class="nav-link text-dark p-4" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link text-dark  p-4" href="#">Projects</a>
+                  </li>
+                  <a href="index.html"><img src="assets/images/logos/Ingelosi Logo No Text.jpg" alt="logo" class="logo"><a>
+                  <li class="nav-item">
+                  <a class="nav-link text-dark  p-4" href="#">Donate</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link text-dark  p-4" href="#">Contact Us</a>
+                  </li>
+          </ul>
+  </div> -->
 
-        <script src="js/sandbox.js"> </script>
+  <!-- <div class="container-fluid mobile-nav">
+
+    <ul>
+      <img class="logo" src="assets/images/logos/Ingelosi Logo Ingelosi Founation Text.jpg" alt="Ingelosi Foundation with logo">
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+    </ul>
+
+  </div> -->
+
+  <!-- <div class="i">
+          <i class="fab fa-facebook-f ml-3 p-2 round-border"></i> 
+          <i class="fas fa-phone p-4"></i>
+  </div>
+
+  <div>
+          <img src="assets/images/pics/close-up-photography-of-yellow-green-red-and-brown-plastic-163064.jpg" alt="" class="hero" width="100%">
+          <h1 class="changes">MOSA</h1>
+  </div> -->
+
+<!-- nav bar with the hand----------------------------------------------------------------------------------------------------------->
+
+<!-- mobile version for navigation -->
+<div class="container-fluid mobile-only">
+  <div class="row justify-content-between p-2">
+  <div class="foundation-logo">
+    <img src="assets/images/logos/Ingelosi Logo No Text.jpg" alt="logo" class="logo">
+  </div> 
+  <div class="foundation-logo my-2 mr-5 text-center"> 
+    <h1>Ingel<span style="color:red">o</span>si <br> Foundation</h1>
+  </div> 
+  <div class="menu mt-4"><a href="#"><i class="fas fa-bars round-border text-dark mr-3"onclick="openNav()"></i></a></div>
+  </div>
+  <!-- hidden navigation menu on mobile -->
+  <div id="myNav" class="overlay container">
+    <div class="row my-3">
+    <div class="col-12">
+        <div class="icon"><a href="javascript:void(0)" class="closebtn text-dark" onclick="closeNav()">&times;</a>
+        </div>
+    </div>
+    <div class="col-12 my-5">
+    <div class="overlay-content text-center">
+    <ul>
+        <li><a href="index.html" class="active">home</a></li>
+        <li><a href="#">who we are</a></li>
+        <li><a href="#">our projects</a></li>
+        <li><a href="#">donate</a></li>
+        <li><a href="#">contact us</a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+</div>
+
+<!-- desktop version for navigation -->
+
+<div class="container navigation">
+  <div class="row">
+    <ul class="nav justify-content-between col-md-12">
+        <li class="nav-item">
+          <a class="nav-link text-dark p-4 mt-2" href="#">Who We Are</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark  p-4 mt-2" href="#">Our Projects</a>
+        </li>
+        <img src="assets/images/logos/Ingelosi Logo No Text.jpg" alt="logo" class="logo">
+         <li class="nav-item">
+          <a class="nav-link text-danger  p-4 mt-2" href="#">Donate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark p-4 mt-2" href="#">Contact Us</a>
+        </li>
+    </ul>  
+    <!-- <div class="icons col-md-1 p-4 offset-md-1">
+        <i class=" social fab fa-facebook-f round-border"></i>
+        <i class=" social fas fa-phone"></i>
+    </div>   --> 
+  </div>    
+</div>
+
+<section id="thehero">
+  <div class="the-inner">
+  <div class="container">
+  <div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <h1>Ingel<span style="color:red">o</span>si Foundation</h1>
+  </div>
+  </div>
+  <div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <p class="text-center">"Inherent in the psyche of all humans is the will to do good and share with others."</p>
+  <button type="button" class="btn btn-danger btn-lg ">Donate</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- who we are section --------------------------------------------------------------------------------------------------------------------->
+  <div class="container my-5">
+    <h1 class="text-center"><u>WH<span class="red">O</span> WE ARE</u></h1>
+    <div class="row">
+      <div class="col-sm-12 col-lg-3 text-center align-self-center">
+        <p>The Ingelosi Foundation has a keen interest in supporting Inner City Johannesburg. We do this by supplying clothing, non-perishable food, and educational support. If you are interested in making a donation, volunteering your time, or supporting the foundation through our merchandise please make use of these links: <a href="#">Donate</a>, <a href="#">Volunteer</a>, <a href="#">Shop</a></p>
+      </div>
+      <div class="col-sm-12 col-lg-6  text-center">
+        <img class="company-image" src="assets/images/logos/Ingelosi Logo Ingelosi Founation Text.jpg" alt="Ingelosi Foundation's Logo">
+      </div>
+      <div id="second-para-about" class="col-sm-12 col-lg-3  text-center align-self-center">
+        <p>The Ingelosi Foundation is a non-profit, volunteer programme, which is run by a enthusiastic, multi-racial, like-minded team. We get involved in the communities emotionally and physically, connecting business partnerships and forming friendships along the way. In the end our goal is to bind a supportive, multi-racial, multi-layered community, from all segments of South African Society.</p>
+      </div>
+    </div>
+  </div>
+
+  <!--Gallary sectiion ----------------------------------------------------------------------------------------------------------------->
+  <section class="gallary-block compact-gallary">
+      <div class="container">
+          <div class="heading">
+              <h1><U>INGEL<span style="color: red;">O</span>SI GALLARY</U></h1>
+              <p>Previous Project</p>
+          </div>
+          <div class="row no-gutters">
+              <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                  <a href="#" class="lightbox">
+                <img class="img-fluid image" src="assets/images/pics/01032880fadb57f61994d0808a8ed6847dc71697b0 - Copy.jpg">
+                <span class="description">
+                    <span class="description-heading">
+                        Lorem ipsum.
+                    </span>
+                    <p><span class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda perspiciatis et natus laborum molestiae enim ut quas, inventore voluptatum sapiente reiciendis eum possimus eveniet quasi expedita. Quasi repellendus pariatur nesciunt.</span></p>
+                </span>
+                </a>
+              </div>
+
+              <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                <a href="#" class="lightbox">
+              <img class="img-fluid image" src="assets/images/pics/010c85e35a5e849665b99fb679c13e4ddecbf9d3cc - Copy.jpg" alt="ingelosi image">
+              <span class="description">
+                  <span class="description-heading">
+                      Lorem ipsumi.
+                  </span>
+                  <p><span class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda perspiciatis et natus laborum molestiae enim ut quas, inventore voluptatum sapiente reiciendis eum possimus eveniet quasi expedita. Quasi repellendus pariatur nesciunt.</span></p>
+              </span>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                <a href="#" class="lightbox">
+              <img class="img-fluid image" src="assets/images/pics/0155190a1b3416a14e22acb2964186f2c6f7ae02ce - Copy.jpg" alt="ingelosi image">
+              <span class="description">
+                  <span class="description-heading">
+                      Lorem ipsum.
+                  </span>
+                  <p><span class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda perspiciatis et natus laborum molestiae enim ut quas, inventore voluptatum sapiente reiciendis eum possimus eveniet quasi expedita. Quasi repellendus pariatur nesciunt.</span></p>
+              </span>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                <a href="#" class="lightbox">
+              <img class="img-fluid image" src="assets/images/pics/0168b2f70811eca75377b14852617b0ffb4570c549 - Copy.jpg" alt="ingelosi image">
+              <span class="description">
+                  <span class="description-heading">
+                      Lorem ipsum.
+                  </span>
+                  <p><span class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda perspiciatis et natus laborum molestiae enim ut quas, inventore voluptatum sapiente reiciendis eum possimus eveniet quasi expedita. Quasi repellendus pariatur nesciunt.</span></p>
+              </span>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                <a href="#" class="lightbox">
+              <img class="img-fluid image" src="assets/images/pics/0178d4dba2eab75594382742113707aecf7d5237d5 - Copy.jpg" alt="ingelosi image">
+              <span class="description">
+                  <span class="description-heading">
+                      Lorem ipsum.
+                  </span>
+                 <p><span class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda perspiciatis et natus laborum molestiae enim ut quas, inventore voluptatum sapiente reiciendis eum possimus eveniet quasi expedita. Quasi repellendus pariatur nesciunt.</span></p>
+              </span>
+              </a>
+            </div>
+
+         
+
+            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                <a href="#" class="lightbox">
+              <img class="img-fluid image" src="assets/images/pics/01abb506545cded11c45388cab6cbb3a726966adc3 - Copy.jpg" alt="ingelosi image">
+              <span class="description">
+                  <span class="description-heading">
+                      Lorem ipsum.
+                  </span>
+                  <p><span class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda perspiciatis et natus laborum molestiae enim ut quas, inventore voluptatum sapiente reiciendis eum possimus eveniet quasi expedita. Quasi repellendus pariatur nesciunt.</span></p>
+              </span>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                <a href="#" class="lightbox">
+              <img class="img-fluid image" src="https://scontent.fjnb8-1.fna.fbcdn.net/v/t1.0-9/p720x720/109816248_151570893188415_1928852590829788362_o.jpg?_nc_cat=104&_nc_sid=110474&_nc_ohc=-SUO-zKKuigAX9vhdU9&_nc_ht=scontent.fjnb8-1.fna&_nc_tp=6&oh=db907a4ec59ee4c7ee810dc91d4bea7a&oe=5F3E27BE" alt="ingelosi image">
+              <span class="description">
+                  <span class="description-heading">
+                      Mandeladay2020
+                  </span>
+                  <p>
+                  <span class="body">The Ingelosi Foundation packed up some beautiful blankets, hand knitted toys and beanies. These were all donated by Knit-a-square. The parcels were given to the children of the Children's Memorial Institute on Mandela Day as part of the City of Courage tour. Thanks to Fight with Insight- Mentorship through boxing. and Women and Men Against Child Abuse for letting us join your day. Ingelosi is proud to be associated with Inner City CAN Collective #cityofcourage #mandeladay2020.</span></p>
+              </span>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                <a href="#" class="lightbox">
+              <img class="img-fluid image" src="https://scontent.fjnb8-1.fna.fbcdn.net/v/t1.0-9/s960x960/96433322_125474422464729_256937360397172736_o.jpg?_nc_cat=103&_nc_sid=110474&_nc_ohc=1FqiNM-Ez_4AX9sq7vm&_nc_ht=scontent.fjnb8-1.fna&_nc_tp=7&oh=0129061c8d1bd9b489139aabb2819306&oe=5F3EDE17" alt="ingelosi image">
+              <span class="description">
+                  <span class="description-heading">
+                    Food parcels donated
+                  </span>
+                  <p><span class="body">Thanks again to our lovely Saxonwold and Parkwood residents who filled the SA Harvest truck on Friday and sent food the Trinity Church soup kitchen in Yeoville. To donate food and arrange a food collection in your area please PM us.</span>
+                  </p>
+              </span>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                <a href="#" class="lightbox">
+              <img class="img-fluid image" src="https://scontent.fjnb8-1.fna.fbcdn.net/v/t1.0-9/p720x720/92836853_101165651562273_407204951685595136_o.jpg?_nc_cat=105&_nc_sid=dd9801&_nc_ohc=m3Ge0T1t2usAX8Dku2P&_nc_ht=scontent.fjnb8-1.fna&_nc_tp=6&oh=fa87e9ef54979de22e5a5c6d5428b857&oe=5F3C25AA" alt="ingelosi image">
+              <span class="description">
+                  <span class="description-heading">
+                      Lorem ipsum.
+                  </span>
+                  <p><span class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda perspiciatis et natus laborum molestiae enim ut quas, inventore voluptatum sapiente reiciendis eum possimus eveniet quasi expedita. Quasi repellendus pariatur nesciunt.</span></p>
+                  </span>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+                <a href="#" class="lightbox">
+              <img class="img-fluid image" src="https://scontent.fjnb8-1.fna.fbcdn.net/v/t1.0-9/p720x720/92555437_101165641562274_8730442918080282624_o.jpg?_nc_cat=110&_nc_sid=dd9801&_nc_ohc=YxM-bv64StAAX9H94-R&_nc_ht=scontent.fjnb8-1.fna&_nc_tp=6&oh=ba491158487c5862daa0e5e755dcd934&oe=5F3E58F9" alt="ingelosi image">
+              <span class="description">
+                  <span class="description-heading">
+                      Lorem ipsum.
+                  </span>
+                  <p><span class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda perspiciatis et natus laborum molestiae enim ut quas, inventore voluptatum sapiente reiciendis eum possimus eveniet quasi expedita. Quasi repellendus pariatur nesciunt.</span></p>
+              </span>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4 item zoom-on-hover">
+              <a href="#" class="lightbox">
+            <img class="img-fluid image" src="assets/images/pics/011af35d9dc589cc867fc6163b2adcd18ac651aa33 - Copy.jpg" alt="ingelosi image">
+            <span class="description">
+                <span class="description-heading">
+                    Lorem ipsum.
+                </span>
+                <p><span class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda perspiciatis et natus laborum molestiae enim ut quas, inventore voluptatum sapiente reiciendis eum possimus eveniet quasi expedita. Quasi repellendus pariatur nesciunt.</span></p>
+            </span>
+            </a>
+          </div>
+
+
+          <div class="col-md-6 col-lg-4 item zoom-on-hover">
+            <a href="#" class="lightbox">
+            <img class="img-fluid image" src="assets/images/pics/018268e2bda063b1ee908222fec7a92ebf170b9242 - Copy.jpg" alt="ingelosi image">
+            <span class="description">
+              <span class="description-heading">
+                  Lorem ipsum.
+              </span>
+              <p><span class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda perspiciatis et natus laborum molestiae enim ut quas, inventore voluptatum sapiente reiciendis eum possimus eveniet quasi expedita. Quasi repellendus pariatur nesciunt.</span></p>
+            </span>
+            </a>
+          </div>
+        </div>
+      </div>
+  </section>
+          
+  <!-- our project section----------------------------------------------------------------------------------------------------------------------->
+  <div class="container my-5">
+    <div class="row justify-content-center text-center mb-6">
+      <div class="col-lg-6">
+        <h1 class="text-center"><u><span class="red">O</span>UR PR<span class="red">O</span>JECTS</u></h1>
+        <p class="text-500 ">The Ingelosi Foundation aims to ceate meaningful opportunities for empowerment throught our four project areas.The Parks/Inner City CAN, Ingelosi Outreach, Ingelosi House and Angelswings</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 pl-lg-7">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-6 order-lg-2 text-center align-items-end">
+            <img class="img-fluid" src="assets/images/logos/downloadInnercity.png" alt="The Parks/Inner City Can Logo">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="text-center">The Parks/ Inner City Can</h2>
+            <p>We, together with GAUTENG TOGETHER and Afrika Awake, are proud to announce the launch of The Parks / Inner City CAN (Community Action Network). This network will mobilise the  local community/ our volunteers to supply much needed resources to the Inner City.</p>
+            <div class="buts">
+              <a target="_blank" href="HTTPS://QKT.IO/CHMHMK"><button>Donate</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="row my-5 d-flex align-items-center">
+          <div class="col-lg-6 text-center align-items-end">
+            <img class="img-fluid" src="assets/images/logos/downloadoutreach.jpg" alt="">
+          </div>
+          <div class="col-lg-6 mt-4">
+            <h2 class="text-center">Ingelosi Outreach</h2>
+            <p>Our outreach department focuses on identifying needy communities and assisting them with the resources we have at hand. We are always looking for donations of clothing and non-perishable foods so that we can pass these on to those in need in the Inner City. If you are an organisation or charity located in the Inner City of Johannesburg who needs support, please complete the following form. If you would like to donate money, goods, your time, or if you are in need of earning community service hours, please make use of the following  links: <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdFgnfQbmEtpaco6WZe6O3RNzDGfz7t3mqwJKvqRsbtzHenvw/formrestricted">Find Support</a>, <a target="_blank" href="HTTPS://QKT.IO/CHMHMK">Donate</a></p>
+            <div class="buts">
+              <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSearAM61mMfVBnZwe9cK2iYQK6QOPN2v1xrPfXkwt0-hKEeAQ/viewform"><button>Volunteer</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="row my-5 d-flex align-items-center">
+          <div class="col-lg-6 order-lg-2 text-center align-self-center">
+            <img class="img-fluid" src="assets/images/logos/downloadhouse.jpg" alt="">
+          </div>
+          <div class="col-lg-6 border-lg-left border-lg-bottom border-300 py-lg-8 mt-4 mt-lg-0 mb-8 mb-lg-0">
+            <h2 class="text-center">Ingelosi House</h2>
+            <p>Our next endeavour is to create an Inner City Community Centre focussed on education and employment. Here we would provide members of our community with opportunities they would otherwise miss out on. We are still in the early stages of this phase of our development.</p>
+          </div>
+        </div>
+        <div class="row my-5 d-flex align-items-center">
+          <div class="col-lg-6 text-center align-items-end">
+            <img class="img-fluid" src="assets/images/logos/angelswings.png" alt="">
+          </div>
+          <div class="col-lg-6 mt-4">
+            <h2 class="text-center">Angelswings</h2>
+            <p>Angel wings is a Non-Profit Organisation with a passion to help people in need. We want to see change and we want to see it fast.</p>
+            <div class="buts">
+              <a target="_blank" href="#"><button>Donate Clothing</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+          
+<!-- the donate and the volunteer page break ----------------------------------------------------------------------------------------------------->
+          
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="col-lg-4 text-center mb-5 ">
+        <a href="#" id="icon-break" class="fas fa-donate mb-4"></a>
+        <br>
+        <a target="_blank" href="HTTPS://QKT.IO/CHMHMK"><button>Donate</button></a>
+      </div>
+      <div class="col-lg-4 text-center mb-5">
+        <a href="#" id="icon-break" class="fas fa-people-carry mb-4"></a>
+        <br>
+        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSearAM61mMfVBnZwe9cK2iYQK6QOPN2v1xrPfXkwt0-hKEeAQ/viewform"><button>Volunteer</button></a>
+      </div>
+    </div>
+  </div>
+<!-- the form of contact us section ------------------------------------------------------------------------------------------------------------->
+  <div class="container mt-5" style="background-color: #038F7F;">
+    <div class="wizard-body pt-3">
+      <h1 class="text-center"><u>C<span class="red">O</span>NTACT US</u></h1>
+      <div>
+        <h4>Our donation centres are at:-</h4>
+        <ul>
+          <li>Meter Mate - 133 Jan Smuts Ave, cnr Denbigh Rd, Parkwood, Johannesburg (red house)</li>
+          <li>Camerastuff  - 473 Jan Smuts Ave, Blairgowrie, Randburg (access via the service road that runs parallel to Jan Smuts from Gordon Avenue)</li>
+        </ul>
+      </div>
+      <p ></p>
+      <p ></p>
+      <form class="needs-validation" novalidate="">
+        <div class="row pt-3">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="contact-name">Your Name <span class="text-danger font-weight-medium">*</span></label>
+              <input class="form-control" type="text" id="contact-name" placeholder="your name" required="">
+              <div class="invalid-feedback">Please enter your name!</div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="contact-email">Your Email <span class="text-danger font-weight-medium">*</span></label>
+              <input class="form-control" type="email" id="contact-email" placeholder="your email" required="">
+              <div class="invalid-feedback">Please provide a valid email address!</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="contact-subject">your phone number</label>
+              <input class="form-control" type="text" id="contact-subject" placeholder="contact number">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <input class="form-control" type="text" id="contact-subject" placeholder="Provide short title of you request">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-message">Message <span class="text-danger font-weight-medium">*</span></label>
+          <textarea class="form-control" rows="7" id="contact-message" placeholder="Let us know more what's on your mind..." required=""></textarea>
+          <div class="invalid-feedback">Please write a message!</div>
+        </div>
+        <div class="text-center pb-3">
+          <a href="#"><button class="sub-button">submit</button></a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer class="page-footer">
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a class="btn-floating btn-fb mx-1">
+          <i id="foot-icons" class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-dribbble mx-1">
+          <i id="foot-icons" class="fas fa-phone"></i>
+        </a>
+      </li>
+    </ul>
+    <div class="text-center">
+      <div class="footer-copyright justify-content-center d-inline py-3">© 2020 Copyright:
+        <p class="d-inline word-footer">Ingelosi Foundation</p>
+      </div>
+    </div>
+      
+  </footer>
+        
+  <script src="js/sandbox.js"> </script>
 </body>
 </html>

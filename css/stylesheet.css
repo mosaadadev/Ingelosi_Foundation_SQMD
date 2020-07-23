@@ -1,59 +1,335 @@
 body{
-    font-family: 'Roboto Condensed', sans-serif;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  
 }
 
 h1, h2, h3{
-    font-family: 'Playfair Display', serif;
+  /* font-family: 'Playfair Display', serif; */
+  font-family: 'Nunito', sans-serif;
+  
 }
+
 p{
-    font-size: 12px;
+  font-size: 16px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+a{
+  color: #038F7F;
+}
+
+a:hover{
+  color: #038F7F;
+  
+}
+
+.red{
+  color: red;
 }
 
 
-.navigation{
-    font-size: 1.3em;
-     text-transform: uppercase;
+/* The navigation bar ******************************************************************************/
+
+/* .navigation{
+  font-size: 1.3em;
 }
+
 .logo{
-    width:80px;
-    height: auto;
+  width:80px;
+  height: auto;
 }
-.img-fluid{
-    height:auto;
+
+.i{
+  position: absolute;
+  top: 8px;
+  right: -0px;
+} */
+
+/* navbar for landing ******************************************************************************/
+.logo{
+  width: 90px;
 }
+.mobile-only{
+  display: block;
+}
+.foundation-logo h1{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 1.9em;
+ }
+.navigation{
+  font-size: 1.2em;
+  display: none;
+}
+.menu{
+  font-size: 25px;
+
+}
+.fa-bars{
+  margin-top: 10px;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+.overlay .icon{
+  float: right;
+  color: black;
+  font-size: 2.5em;
+}
+.overlay-content ul{
+  list-style: none;
+  font-size: 2em;
+  font-weight: 500;
+  padding: 65px;
+}
+.overlay-content a{
+  color: black;
+  line-height: 1em;
+}
+
+.nav-link{
+  text-transform: uppercase;
+}
+
+
+/* Hero image landing page ************************************************************************/
+/* .img-fluid{
+  height:auto;
+}
+
 .hero{
-    height:90vh;
+  height:90%;
 }
-/* .hero {
-    height: 100vh;
-    background: #000 url(https://www.pexels.com/photo/man-s-hand-in-shallow-focus-and-grayscale-photography-167964/) center center no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  .hero:before {
-    content:"";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    /* background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%); */
-  /* } */
-  .hero-content {
-    position: absolute;
-    bottom: 15px;
-    color: #fff;
-  } */
 
-  .jumbotron {
+.changes{
+  color: red;
+  font-size: 4em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+/* landing page **************************************************************************************/
+#thehero {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://images.pexels.com/photos/167964/pexels-photo-167964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  }
+.the-inner {
+  background-color: #000000;
+  opacity: 0.8;
+  width: 100vw;
+  padding: 1rem;
+  } 
+.the-inner h1{
+  color: #FFFFF0;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 3.5em;
+  }
+  
+.the-inner p {
+  color: #C0C0C0;
+  text-align: left;
+  font-size: 1.1rem;  
+  }
+  
+.btn-danger{
+  background-color: red !important;
+  }
+
+/* about **********************************************************************************************/
+.buts{
+  display: flex;
+  justify-content: center;
+}
+
+button{
+  text-decoration: none;
+  border: 0.5px solid red;
+  color: red;
+  font-size: 1.3em;
+  background: transparent;
+}
+
+button:hover{
+  color: white;
+  background-color: red;
+
+}
+
+/* gallary ******************************************************************************************/
+.gallary-block{
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+.gallary-block .heading{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.gallary-block .heading h2{
+  font-weight: bold;
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+
+.gallary-block.compact-gallary .item{
+  overflow: hidden;
+  background: black;
+  margin-bottom: 0;
+  opacity:1;
+}
+.gallary-block.compact-gallary .item .imgages{
+  transition: 0.8s ease;
+}
+
+.gallary-block.compact-gallary .item .info{
+  position: relative;
+  display: inline-block;
+}
+
+.gallary-block.compact-gallary .item .description{
+  display: grid;
+  position: absolute;
+  left:0;
+  color:white;
+  bottom:0;
+  padding: 10px;
+  font-size: 17px;
+  line-height: 18px;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  opacity:1;
+  transition: 0.8s ease;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.39));
+}
+
+.gallary-block.compact-gallary .item .description .description-heading{
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.gallary-block.compact-gallary .item .description .description-body{
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 0.8em;
+  
+
+}
+
+/* page break ***************************************************************************************/
+
+#icon-break{
+  font-size: 5em;
+  color: #038F7F;
+}
+
+/* form *********************************************************************************************/
+button.sub-button{
+  border: 0.5px solid #DEDEDE;
+  background-color: lightgray;
+  color: black
+}
+/* footer ***********************************************************************************************/
+.word-footer{
+  font-size: 20px; 
+}
+
+#foot-icons{
+  border-radius: 50%;
+  border: solid 1px black;
+  font-size: 20px;
+  padding: 10px;
+}
+
+
+
+
+
+/* --------------------------------------------------------------media queries */
+
+/* // Extra small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // --------------------------------------------------------------Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (orientation: landscape) { 
+  .gallary-block.compact-gallary .item .description{
+    opacity: 0;
+    transition: 0.8s ease;
+
+}
+.gallary-block.compact-gallary .item .description:hover{
+    opacity: 1;
     color: white;
-    background-image: url("https://images.unsplash.com/photo-1438109491414-7198515b166b?q=80&fm=jpg&s=cbdabf7a79c087a0b060670a6d79726c");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+}
+.gallary-block .zoom-on-hover:hover .image{
+    transform: scale(1.3);
+    opacity: 0.7;
+
+}
+}
+
+/* // --------------------------------------------------------------Medium devices (tablets) */
+@media (min-width: 768px) {
+/* landing page  *******************************************************************************/
+  .navigation{
+    display: block;
+  }
+  .mobile-only{
+    display: none;
+  }
+  .the-inner h1{
+    color: #FFFFF0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 6em;
+    }
+}
+
+/* // --------------------------------------------------------------Large devices (ipad pro) */
+@media (min-width: 992px) { 
+ 
+}
+
+/* // --------------------------------------------------------------Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  /* About pSection******************************************************************************************/
+  .company-image{
+      height: 600px;
   }
 
+}
+/* --------------------------------------------------------------Extra large devices landscape */
+@media (min-width: 1200px) and (orientation: landscape) { 
+}
+
+/* --------------------------------------------------------------Internet Explorer */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+}

@@ -11,46 +11,144 @@ h1, h2, h3{
 p{
     font-size: 12px;
 }
-.navigation{
-    font-size: 1.3em;
-     text-transform: uppercase;
-}
 .logo{
-    width:80px;
-    height: auto;
+  width: 90px;
 }
-.img-fluid{
-    height:auto;
+.mobile-only{
+  display: block;
 }
-.hero{
-    height:90vh;
+.foundation-logo h1{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 1.9em;
+ }
+.navigation{
+  font-size: 1.2em;
+  display: none;
 }
-/* .hero {
-    height: 100vh;
-    background: #000 url(https://www.pexels.com/photo/man-s-hand-in-shallow-focus-and-grayscale-photography-167964/) center center no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  .hero:before {
-    content:"";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    /* background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%); */
-  }
-  .hero-content {
-    position: absolute;
-    bottom: 15px;
-    color: #fff;
-  } */
+.menu{
+  font-size: 25px;
+}
+.fa-bars{
+  margin-top: 10px;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+.overlay .icon{
+  float: right;
+  color: black;
+  font-size: 2.5em;
+}
+.overlay-content ul{
+  list-style: none;
+  font-size: 2em;
+  font-weight: 500;
+  padding: 65px;
+}
+.overlay-content a{
+  color: black;
+  line-height: 1em;
+}
 
-  .jumbotron {
-    color: white;
-    background-image: url("https://images.unsplash.com/photo-1438109491414-7198515b166b?q=80&fm=jpg&s=cbdabf7a79c087a0b060670a6d79726c");
-    background-position: center;
-    background-repeat: no-repeat;
+
+#thehero {
+width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://images.pexels.com/photos/167964/pexels-photo-167964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-size: cover;
-    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+ .the-inner {
+    background-color: #000000;
+    opacity: 0.8;
+    width: 100vw;
+    padding: 1rem;
+} 
+.the-inner h1{
+color: #FFFFF0;
+font-family: 'Nunito', sans-serif;
+font-weight: 400;
+line-height: 1.4;
+font-size: 3.5em;
+}
+
+.the-inner p {
+color: #C0C0C0;
+text-align: left;
+font-size: 1.1rem;  
+}
+
+.btn-danger{
+  background-color: red !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .navigation{
+    display: block;
   }
+  .mobile-only{
+    display: none;
+  }
+  .the-inner h1{
+    color: #FFFFF0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 6em;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

@@ -1,264 +1,341 @@
 body{
-    font-family: 'Roboto Condensed', sans-serif;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+  
 }
 html{
     overflow-x: hidden;
-    overflow-y: hidden;
     margin: 0;
     padding: 0;  
 }
 
 h1, h2, h3{
-    font-family: 'Playfair Display', serif;
+  /* font-family: 'Playfair Display', serif; */
+  font-family: 'Nunito', sans-serif;
+  
 }
+
 p{
-    font-size: 12px;
+  font-size: 16px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+a{
+  color: #038F7F;
+}
+
+a:hover{
+  color: #038F7F;
+  
+}
+
+.red{
+  color: red;
 }
 
 
-.social{
-    border: 1px solid #84a9ac;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-    text-align: center;
-    padding-top: 10px;
-    margin-left: 5px;
+/* The navigation bar ******************************************************************************/
+
+/* .navigation{
+  font-size: 1.3em;
+}
+
+.logo{
+  width:80px;
+  height: auto;
+}
+
+.i{
+  position: absolute;
+  top: 8px;
+  right: -0px;
+} */
+
+/* navbar for landing ******************************************************************************/
+.logo{
+  width: 90px;
+}
+.mobile-only{
+  display: block;
+}
+.foundation-logo h1{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 1.9em;
+ }
+.navigation{
+  font-size: 1.2em;
+  display: none;
+}
+.menu{
+  font-size: 25px;
+
+}
+.fa-bars{
+  margin-top: 10px;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+.overlay .icon{
+  float: right;
+  color: black;
+  font-size: 2.5em;
+}
+.overlay-content ul{
+  list-style: none;
+  font-size: 2em;
+  font-weight: 500;
+  padding: 65px;
+}
+.overlay-content a{
+  color: black;
+  line-height: 1em;
+}
+
+.nav-link{
+  text-transform: uppercase;
+}
+
+
+/* Hero image landing page ************************************************************************/
+/* .img-fluid{
+  height:auto;
+}
+
+.hero{
+  height:90%;
+}
+
+.changes{
+  color: red;
+  font-size: 4em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+/* landing page **************************************************************************************/
+#thehero {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://images.pexels.com/photos/167964/pexels-photo-167964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  }
+.the-inner {
+  background-color: #000000;
+  opacity: 0.8;
+  width: 100vw;
+  padding: 1rem;
+  } 
+.the-inner h1{
+  color: #FFFFF0;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 3.5em;
+  }
+  
+.the-inner p {
+  color: #C0C0C0;
+  text-align: left;
+  font-size: 1.1rem;  
+  }
+  
+.btn-danger{
+  background-color: red !important;
+  }
+
+/* about **********************************************************************************************/
+.buts{
+  display: flex;
+  justify-content: center;
+}
+
+button{
+  text-decoration: none;
+  border: 0.5px solid red;
+  color: red;
+  font-size: 1.3em;
+  background: transparent;
+}
+
+button:hover{
+  color: white;
+  background-color: red;
+
+}
+
+/* gallary ******************************************************************************************/
+.gallary-block{
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+.gallary-block .heading{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.gallary-block .heading h2{
+  font-weight: bold;
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+
+.gallary-block.compact-gallary .item{
+  overflow: hidden;
+  background: black;
+  margin-bottom: 0;
+  opacity:1;
+}
+.gallary-block.compact-gallary .item .imgages{
+  transition: 0.8s ease;
+}
+
+.gallary-block.compact-gallary .item .info{
+  position: relative;
+  display: inline-block;
+}
+
+.gallary-block.compact-gallary .item .description{
+  display: grid;
+  position: absolute;
+  left:0;
+  color:white;
+  bottom:0;
+  padding: 10px;
+  font-size: 17px;
+  line-height: 18px;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  opacity:1;
+  transition: 0.8s ease;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.39));
+}
+
+.gallary-block.compact-gallary .item .description .description-heading{
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.gallary-block.compact-gallary .item .description .description-body{
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 0.8em;
+  
+
+}
+
+/* page break ***************************************************************************************/
+
+#icon-break{
+  font-size: 5em;
+  color: #038F7F;
+}
+
+/* form *********************************************************************************************/
+button.sub-button{
+  border: 0.5px solid #DEDEDE;
+  background-color: lightgray;
+  color: black
+}
+/* footer ***********************************************************************************************/
+.word-footer{
+  font-size: 20px; 
+}
+
+#foot-icons{
+  border-radius: 50%;
+  border: solid 1px black;
+  font-size: 20px;
+  padding: 10px;
 }
 
 
 
 
 
-/* Scroll bar */
-body::-webkit-scrollbar {
-    width: 0.2em;
-  }
-  
-  body::-webkit-scrollbar-thumb {
-  background-color:  gray;
-  outline: 1px solid rgb(7, 7, 7);
-  
-  }
-  
-  .MediaDiv{
-      /* 
-          font-size: 1.5em; */
-          z-index: 20;
-          /* margin-left:-2vw; */
-      }
-  
-  
-  /* Navbar for mobile*/
-  .overlay{
-      height: 100%;
-      width: 100%;
-      display: none;
-      position: fixed;
-      z-index: 1;
-      left:-100vw;
-      top: 0;
-      left: 0;
-      background-color: rgb(241, 234, 234);
-      color: rgb(12, 12, 12);
-      overflow: hidden; 
-      transition: 0.5s;
-    }
-  
-  .overlay-content ul{
-     list-style: none;
-   }
-  
-    /* Position the content inside the overlay */
-  .overlay-content {
-      position: relative;
-      top: 25%;
-      width: 100%; 
-      text-align: center; 
-      margin-top: 30px; 
-  }
-  
-    /* The navigation links inside the overlay */
-  .overlay a {
-      padding: 8px;
-      text-decoration: none;
-      font-size: 36px;
-      color: black;
-      display: block; 
-      transition: 0.3s; 
-      font-size: 1.5em;
-  }
-  
-    /* Position the close button (top right corner) */ 
-  .overlay .closebtn {
-      position: absolute;
-      right: 35px;
-      top: 2px;
-      font-weight: 900;
-    }
-  
-   /*media icons */
-  .icon{
-      display: inline-block;
-      font-size: 1.5em;
-      border: 1.5px solid white;
-      border-radius: 50%;
-      height: 40px;
-      width: 40px;
-      text-align: center;
-      padding-top: 2px;
-  }
-    /* media icons */
-    .icon.mobile{
-      float: right;
-      color: white;
-    }
-  
-   /* burger navbar */
-  .Bars{
-      margin-left: 1vw;
-  }
-  
-  .Desktop{
-      display: none;
-  
-  }
-  
-  /* navbar */
-  .navbar-expand-lg{
-      color: black;
-      font-size: 1.5em;
-  }
-  
-  /* paragraph text for all the pages and sections */
-  p{
-      font-size: 14px;
-      font-weight: 250;
-      line-height: 18px;
-      text-align: justify;
-      text-size-adjust: 2px;
-      margin: 20px;
-  }
-  
-  h4{
-      font-size: 18px;
-  }
-  
-  /*  general classes*/
-  .hideMobile{
-      display: none;
-  }
-  
-  /* icons */
-  .icon a{
-      color: black;
-  }
-  .icon{
-      color: black;
-  }
-  a{
-      color: rgb(0, 0, 0);
-  }
-  
-  a:hover{
-      color: rgb(128, 128, 128);
-  }
-  
-  
-  /* about us page */
-  .AboutUsImage{
-      width: 100%;
-  }
+/* --------------------------------------------------------------media queries */
 
+/* // Extra small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
 
-  
- /* // -Small devices (landscape phones, 576px and up) */
- @media (min-width: 576px) and (orientation: landscape) { 
- 
-   
+/* // --------------------------------------------------------------Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (orientation: landscape) { 
+  .gallary-block.compact-gallary .item .description{
+    opacity: 0;
+    transition: 0.8s ease;
+
+}
+.gallary-block.compact-gallary .item .description:hover{
+    opacity: 1;
+    color: white;
+}
+.gallary-block .zoom-on-hover:hover .image{
+    transform: scale(1.3);
+    opacity: 0.7;
+
+}
 }
 
-/* -Medium devices (tablets or ipad) */
+/* // --------------------------------------------------------------Medium devices (tablets) */
 @media (min-width: 768px) {
-
-   
-  /* navbar section*/
-  .TabletNavbar{
-   margin-top: 2vh;
-   margin-bottom: 5vh;
- }
-  /* burger navbar */
- .Bars{
-   margin-left: 5vw;
- }
-
-   /* Clients page */
-.ClientsImages{
-   width: 60%;
-}
-/* about us page */
-.AboutUsImage{
-   width: 60%;
-}
-
-.ProjectImage{
-   width: 80%;
-}
-
-.FormButton{
-   width: 25vw;
-   margin-left: 20vw;
-}
-.ProjectText{
-   transform: translate(50px,200px);
-   z-index: 10;
-}
-.TypeOfProject{
-   transform: translate(50px,200px);
-   z-index: 10;
-}
-
-
-
-}
-
-/* -Large devices (ipad pro) */
-@media (min-width: 992px) { 
-   .mobile-only{
-       display: none;
-   }
-   .Desktop{
-   display: block;
-   color: black;
-   }  
-
-/* Landing page */
-
-.FormButton{
-   width: 20vw;
-   margin-left: 15vw;
-}
-
-   
-}
-@media screen and (min-width: 1200px) {
-
-   .ProjectText{
-       transform: translate(50px,-80px);
-       z-index: 10;
-       color: hotpink;
-   }
-   .TypeOfProject{
-       transform: translate(50px,-20px);
-       z-index: 10;
-       color: hotpink;
-   }
-    
-
+/* landing page  *******************************************************************************/
+  .navigation{
+    display: block;
   }
+  .mobile-only{
+    display: none;
+  }
+  .the-inner h1{
+    color: #FFFFF0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 6em;
+    }
+}
+
+/* // --------------------------------------------------------------Large devices (ipad pro) */
+@media (min-width: 992px) { 
  
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {}
+}
+
+/* // --------------------------------------------------------------Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  /* About pSection******************************************************************************************/
+  .company-image{
+      height: 600px;
+  }
+
+}
+/* --------------------------------------------------------------Extra large devices landscape */
+@media (min-width: 1200px) and (orientation: landscape) { 
+}
+
+/* --------------------------------------------------------------Internet Explorer */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+}

@@ -45,6 +45,6 @@ $(function(){
 
   document.addEventListener("scroll", function() {
 
-    if (window.pageYOffset >3)
+    if (window.pageYOffset >4)
     document.getElementById('anything').style.display = "block";
     })

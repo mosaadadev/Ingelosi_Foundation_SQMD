@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: 'Roboto Condensed', sans-serif;
   overflow-x: hidden;
@@ -13,8 +17,8 @@ html{
 }
 
 h1, h2, h3{
-  /* font-family: 'Playfair Display', serif; */
   font-family: 'Nunito', sans-serif;
+  line-height: 1.4;
   
 }
 
@@ -186,16 +190,18 @@ a:hover{
 button{
   text-decoration: none;
   border: 0.5px solid red;
-  color: red;
+  border-radius: 5px;
+  color: white;
   font-size: 1.3em;
-  background: transparent;
+  background: red;
+  padding: 10px;
 }
 
-button:hover{
+/* button:hover{
   color: white;
   background-color: red;
 
-}
+} */
 
 /* gallary ******************************************************************************************/
 .gallary-block{
@@ -247,18 +253,18 @@ button:hover{
   background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.39));
 }
 
-.gallary-block.compact-gallary .item .description .description-heading{
+/* .gallary-block.compact-gallary .item .description .description-heading{
   font-size: 1em;
   font-weight: bold;
-}
+} */
 
-.gallary-block.compact-gallary .item .description .description-body{
+/* .gallary-block.compact-gallary .item .description .description-body{
   margin-top: 10px;
   font-weight: 300;
   font-size: 0.8em;
   
 
-}
+} */
 
 /*ZoomIn Hover Effect*/
 .hover-zoomin a {
@@ -287,7 +293,7 @@ button:hover{
 
 #icon-break{
   font-size: 5em;
-  color: #038F7F;
+  color: #444444;
 }
 .zoom {
   transition: width 1s, height 1s, transform 1s;
@@ -299,12 +305,14 @@ button:hover{
 } 
 
 
+
 /* form *********************************************************************************************/
 button.sub-button{
   border: 0.5px solid #DEDEDE;
   background-color: lightgray;
   color: black
 }
+
 /* footer ***********************************************************************************************/
 .word-footer{
   font-size: 20px; 
@@ -315,6 +323,13 @@ button.sub-button{
   border: solid 1px black;
   font-size: 20px;
   padding: 10px;
+}
+
+#bookface{
+  border-radius: 50%;
+  border: solid 1px black;
+  font-size: 20px;
+  padding: 10px 14px;
 }
 
 
@@ -371,7 +386,12 @@ button.sub-button{
 @media (min-width: 1200px) { 
   /* About pSection******************************************************************************************/
   .company-image{
-      height: 600px;
+      height: 550px;
+  }
+
+  .pro-img{
+    height: 333px;
+    width: 500px;
   }
 
 }

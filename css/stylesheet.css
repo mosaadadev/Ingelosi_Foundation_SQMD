@@ -151,6 +151,17 @@ a:hover{
   width: 100vw;
   padding: 1rem;
   } 
+  #anything {
+    /* width: 200px;
+    height: 200px; */
+    display: none;
+    /* position: fixed; */
+    /* top: 50px;
+    left: 50%; */
+    /* margin-left: -100px;
+    border: 1px solid;
+    background: grey */
+    }
 .the-inner h1{
   color: #FFFFF0;
   font-family: 'Nunito', sans-serif;
@@ -252,12 +263,44 @@ button:hover{
 
 } */
 
+/*ZoomIn Hover Effect*/
+.hover-zoomin a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.hover-zoomin img {
+  width: 100%;
+  height: auto;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.hover-zoomin:hover img {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
 /* page break ***************************************************************************************/
 
 #icon-break{
   font-size: 5em;
   color: #444444;
 }
+.zoom {
+  transition: width 1s, height 1s, transform 1s;
+
+}
+
+.zoom:hover {
+  transform: rotate(180deg);
+} 
+
 
 
 /* form *********************************************************************************************/
@@ -340,7 +383,7 @@ button.sub-button{
 @media (min-width: 1200px) { 
   /* About pSection******************************************************************************************/
   .company-image{
-      height: 300px;
+      height: 600px;
   }
 
   .pro-img{

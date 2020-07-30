@@ -1,22 +1,29 @@
-$(function(){
-    var words = [
-            'Empower',
-            'Thuthuka',
-            'Matlafatsa',
-            'Matlafatsa',
-            'Shomedzani',
-            'Bemagtig',
-            'Tiyisa',
-            'Matlafatsa '
-            ], i = 0; // i for counting
+// $(function(){
+//     var words = [
+//             'Empower',
+//             'Thuthuka',
+//             'Matlafatsa',
+//             'Matlafatsa',
+//             'Shomedzani',
+//             'Bemagtig',
+//             'Tiyisa',
+//             'Matlafatsa '
+//             ], i = 0; // i for counting
     
-        setInterval(function(){
-            $('.changes').fadeOut(function(){ //fadeout text
-                $(this).html(words[i=(i+1)%words.length]).fadeIn(); //update, count and fadeIn
-            });
-        }, 2000 ); //2s
-    })
+//         setInterval(function(){
+//             $('.changes').fadeOut(function(){ //fadeout text
+//                 $(this).html(words[i=(i+1)%words.length]).fadeIn(); //update, count and fadeIn
+//             });
+//         }, 2000 ); //2s
+//     })
 
+    function openNav() {
+        document.getElementById("myNav").style.display = "block";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.display = "none";
+      }
 
 
 // function myFunction() {
@@ -35,3 +42,9 @@ $(function(){
   function closeNav() {
     document.getElementById("myNav").style.display = "none";
   }
+
+  document.addEventListener("scroll", function() {
+
+    if (window.pageYOffset >3)
+    document.getElementById('anything').style.display = "block";
+    })
